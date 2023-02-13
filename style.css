@@ -1,0 +1,191 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellow;
+}
+.line {
+  display: flex;
+}
+.num {
+  padding-top: 100px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+.num {
+  padding-top: 100px;
+}
+.one {
+  background-color: rgb(14, 181, 126);
+  animation-name: one;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes one {
+  0% {
+    transform: skewX(30deg);
+  }
+  100% {
+    transform: skewX(-30deg);
+  }
+}
+.two {
+  background-color: rgb(166, 117, 211);
+  animation-name: two;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes two {
+  0% {
+    transform: skewY(30deg);
+  }
+  100% {
+    transform: skewY(-30deg);
+  }
+}
+.three {
+  background-color: cadetblue;
+  animation-name: three;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+}
+@keyframes three {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.blue {
+  background-color: rgb(97, 97, 193);
+  animation-name: blue;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes blue {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.red {
+  background-color: rgb(199, 97, 97);
+  animation-name: red;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes red {
+  0% {
+    transform: scaleX(0.5);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.green {
+  background-color: rgb(52, 166, 52);
+  animation-name: green;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+@keyframes green {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: scaleX(180deg);
+  }
+}
+
+.box2 {
+  background-color: rgb(89, 137, 17);
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+.t1 {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+
+.t1:hover {
+  width: 300px;
+}
+
+.t2 {
+  transition-property: width, height;
+  transition-duration: 2s, 3s;
+  transition-timing-function: linear;
+}
+.t2:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.t3 {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+
+.t3:hover {
+  width: 300px;
+}
+
+.t4 {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+.t4:hover {
+  width: 300px;
+}
+.t5 {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: ease-in;
+}
+.t5:hover {
+  width: 300px;
+}
+
+.t6 {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.t6:hover {
+  width: 300px;
+}
+
+.t7 {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+.t7:hover {
+  width: 300px;
+}
